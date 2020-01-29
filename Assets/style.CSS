@@ -1,0 +1,212 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header and Nav bar */
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+.header {
+    background-color: rgba(33, 35, 34, .9);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: lightgray;
+}
+
+/* .header h1 {
+    padding: 20px;
+  
+} */
+
+.nav {
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgray;
+    box-shadow: 0px 10px 1000px rgba(0, 0, 0, 0.356);
+    background-color: whitesmoke;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.navbar a {
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: gray; */
+    font-size: 20px;
+    color: gray;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.portfolio-link {
+    /* padding: 0px; */
+    box-sizing: content-box;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: lightgray;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: lightgray;
+}
+
+/* About Me and Image */
+
+.about-me {
+    margin-bottom: 200px;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: .5%;
+    z-index: 10;
+}
+
+.about-me h1 {
+    padding-bottom: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgray;
+    color: gray;
+}
+
+.image {
+    margin: auto;
+}
+
+img {
+    border-radius: .5%;
+    max-width: 100%;
+}
+
+/* Text */
+
+.text {
+    color: gray;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 35px;
+    background-color: gray;  
+    color: white;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-top-color: rgba(33, 35, 34, .9);
+    box-shadow: 0px -10px 1000px rgba(0, 0, 0, 0.356);
+}
+
+
+
+/* Background Image */
+
+body {
+    background-image: url(../Assets/Images/crossline-dots.png);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        box-sizing: border-box;
+        position: relative;
+        left: 40px;
+        float: left;
+        padding: 6px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: lightgray;
+        z-index: 10;
+    }
+
+    /* .header h1 {
+        position: absolute;
+        left: 10px;
+    } */
+
+    .navbar {
+        padding: 0px;
+        background-color: white;
+    }
+
+    .nav {
+        background-color: white;
+        border-bottom-color: white;
+        box-shadow: 0px 10px 1000px white;
+
+    }
+
+    .navbar ul {
+        float: right;
+        position: relative;
+        left: 5
+    }
+
+    .navbar ul a {
+        font-size: 18px;
+    }
+
+    #med-header {
+        width: 100%;
+        background-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: lightgray;
+        box-shadow: 0px 10px 1000px rgba(0, 0, 0, 0.356);
+    }
+
+    .about-me {
+       height: 1000px;
+    }
+
+    .image {
+        position: relative;
+        right: 192px;
+        padding-top: 15px;
+    }
+
+    img {
+        max-width: 60%;
+        position: relative;
+        top: 70px;
+        float: left;
+    }
+
+    .text {
+        font-size: 16px;
+        position: relative;
+        top: 70px;
+    }
+
+    .text-one {
+        float: right;
+    }
+
+    
+
+
+
+
+
+
+    
+}
