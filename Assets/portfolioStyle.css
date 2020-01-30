@@ -94,7 +94,7 @@ body {
 }
 
 .images {
-    background-image: url(https:/placehold.it/490x490);
+    background-image: url(https://placehold.it/490x490);
     width: 490px;
     height: 490px;
     object-fit: cover;
