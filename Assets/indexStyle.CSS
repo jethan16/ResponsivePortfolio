@@ -7,6 +7,8 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url(../Assets/Images/crossline-dots.png);
     background-position: center center;
+    background-color: rgba(109, 167, 254, 0.384);
+    background-blend-mode: lighten;
 }
 
 /* Header and Nav bar */
@@ -20,7 +22,7 @@ body {
     background-color: whitesmoke;
     border-bottom-style: solid;
     border-bottom-width: 4px;
-    border-bottom-color: rgba(33, 35, 34, .8);
+    border-bottom-color: rgb(37, 50, 66);
     box-shadow: 0px 10px 1000px rgba(0, 0, 0, 0.356);
 
 }
@@ -33,7 +35,7 @@ body {
 .header h1 {
     background-color: rgb(67 127 199);
     text-align: center;
-    color: white;
+    color: rgb(219, 230, 255);
     padding: 25px 0px;
     margin: 0px;
     
@@ -85,7 +87,7 @@ body {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: lightgray;
-    color: gray;
+    color: rgb(37, 50, 66);
 }
 
 .image {
@@ -119,7 +121,7 @@ img {
     color: white;
     border-top-style: solid;
     border-top-width: 10px;
-    border-top-color: rgba(33, 35, 34, .9);
+    border-top-color: rgb(37, 50, 66);
     box-shadow: 0px -10px 1000px rgba(0, 0, 0, 0.356);
 }
 
