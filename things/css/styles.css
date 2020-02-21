@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    outline: none !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -59,12 +67,12 @@ h1 {
 
 .menu {
     position: fixed;
-    top: -50px;
-    right: -50px;
+    top: 0px;
+    right: 0px;
     margin: 0;
-    width: 75%;
-    height: 40%;
-    background: linear-gradient(to bottom left, rgb(226, 159, 44) 10%, rgb(236, 191, 44)90%);
+    width: 100vw;
+    height: 8%;
+    background: linear-gradient(to right, rgb(236, 169, 54) 10%, rgb(236, 191, 44)90%);
     opacity: .9;
     z-index: 10;
     transition: .25s ease-in-out;
@@ -72,8 +80,9 @@ h1 {
 }
 
 .menu-hide {
-    transform: translate(240px, -240px);
+    transform: translate(400px);
     transition: ease-in-out .25s;
+    opacity: 0;
 }
 
 /* MENU DONE */
@@ -120,16 +129,28 @@ h1 {
 .middle {
     height: 600px;
     width: 100vw;
-    background:linear-gradient( rgb(204, 243, 242),#EDF2F4);
+    background:linear-gradient( rgb(220, 250, 249),#EDF2F4);
     overflow: hidden;
 }
+
+.network-container {
+    display: flex;
+    flex-direction: space-around;
+    width: 40vw;
+    height: 50px;
+    box-shadow: #8D99AE 0px 0px 15px;
+    z-index: -1;
+    overflow: hidden;
+}
+
 
 .profile {
     align-self: center;
     /* transform: scale(2,2); */
     border-radius: 100%;
     position: relative;
-    top: -60%;
+    bottom: 425px;
+    /* top: -60%; */
     border: solid 5px #353531;
     z-index: 1;
 }
@@ -138,6 +159,7 @@ h1 {
 .cloud1 {
     transform: rotate(-135deg);
     position: relative;
+    top: -70px;
     right: -154px;
     z-index: 10;
     transition: 1s ease-in-out;
@@ -147,7 +169,7 @@ h1 {
     transform: rotate(25deg) scale(1.15,1.15);
     z-index: 10;
     position: relative;
-    bottom: -155px;
+    bottom: -104px;
     left: -115px;
     transition: 1.15s ease-in-out;
 }
