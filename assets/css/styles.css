@@ -8,9 +8,11 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* a {
-    outline: none !important;
-} */
+.logo {
+    width: 10%;
+    position: fixed;
+    margin: 10px
+}
 
 p {
     font-size: 15px;
@@ -38,7 +40,9 @@ h1 {
 }
 
 .upper {
-    background: linear-gradient(195deg, #2B2D42 15%,#8D99AE 90%);
+    /* background: linear-gradient(195deg, #2B2D42 15%,#8D99AE 90%); */
+    /* background: linear-gradient(195deg,#4A7C59  90%, #D0E3CC 90%); */
+    background-color:#537D8D;
     /* z-index: -1; */
 }
 
@@ -91,7 +95,7 @@ h1 {
     opacity: .9;
     z-index: 10;
     transition: .25s ease-in-out;
-    z-index: 1;
+    z-index: 15;
 }
 
 .menu-hide {
@@ -124,7 +128,7 @@ h1 {
 
 .fa-angle-double-down {
     position: relative;
-    top: 5px;
+    top: -30px;
     margin-left: 45%;
     color: rgb(236, 191, 44);
     opacity: .9;
@@ -144,6 +148,7 @@ h1 {
 .middle {
     /* height: 550x; */
     width: 100vw;
+    height: 450px;
     padding: 0px;
     background:linear-gradient( rgb(220, 250, 249),#EDF2F4);
     overflow: hidden;
@@ -161,17 +166,17 @@ h1 {
 
 
 .profile {
-    align-self: center;
     border-radius: 100%;
     position: relative;
-    bottom: 385px;
+    width: 325px;
+    margin: 10px 25px;
+    bottom: 450px;
     border: solid 5px #353531;
     z-index: 1;
 }
 
-
 .cloud1 {
-    transform: rotate(-135deg);
+    transform: rotate(-135deg) scale(.85);
     position: relative;
     top: -70px;
     right: -156px;
@@ -180,20 +185,59 @@ h1 {
 }
 
 .cloud2 {
-    transform: rotate(35deg) scale(1.25,1.25);
+    transform: rotate(5deg) scale(.9);
     z-index: 10;
     position: relative;
-    bottom: -143px;
-    left: -155px;
+    bottom: -13px;
+    left: -115px;
     transition: 1.15s ease-in-out;
 }
 
 .cloudWiggle1 {
-    transform: rotate(-137deg) scale(1.015)
+    transform: rotate(-137deg) scale(.9)
 }
 
 .cloudWiggle2 {
-    transform: rotate(37deg) scale(1.12)
+    transform: rotate(8deg) scale(.85)
+}
+
+.about-arrow {
+    position: relative;
+    left: 120px;
+    bottom: 280px;
+}
+
+
+.about {
+    position: relative;
+    /* box-sizing: content-box; */
+    background-color: whitesmoke;
+    height: 230px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    padding: 20px 0;
+    padding-top: 30px;
+    margin: 0px auto;
+}
+
+.about h1 {
+    /* padding-right: 55px; */
+    font-weight: 300;
+}
+
+.about-me {
+    display: flex;
+    height: 200px;
+}
+
+.about-me p {
+    box-sizing: content-box;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    margin-left: auto;
 }
 
 /* LOWER */
@@ -209,10 +253,12 @@ h1 {
 }
 
 .projects-title {
+    font-size: 35px;
+    color: black;
+    font-weight: 300;
     text-align: center;
     margin: 10px auto;
-    font-size: 25px;
-    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .project-bar {
@@ -260,7 +306,7 @@ h1 {
     text-align: center;
     background-image: url(assets/images/quiz.png);
     height: 250px;
-    width: 90vw;
+    width: 336px;
     border-radius: .5em;
     margin: 20px auto;
     margin-top: 0;
@@ -273,7 +319,7 @@ h1 {
     text-align: center;
     background-image: url(assets/images/weather.png);
     height: 250px;
-    width: 90vw;
+    width: 336px;
     border-radius: .5em;
     margin: 20px auto;
     margin-top: 0;
@@ -287,16 +333,30 @@ h1 {
     box-shadow: inset 0 0 1000px 500px rgba(124, 124, 124, 0.897);
 }
 
-/* .cover-title {
-    font-size: 35px;
-    color: white;
-    opacity: 1;
-} */
-
 .link-style {
     color: white;
     font-size: 25px;
     font-style: italic;
 }
 
+.contact {
+    padding: 20px;
+    background-color: whitesmoke;
+}
 
+.contact-container {
+    padding: 10px;
+    border-radius: .5em;
+    background-color: white;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.contact {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 0;
+}
+
+.contact h1 {
+    font-weight: 300;
+}

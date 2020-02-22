@@ -49,7 +49,7 @@ $(".quiz").on("click", function () {
         link.attr("href", "https://jethan16.github.io/CodeQuiz/")
         link.attr("target", "_blank")
         link.addClass("link-style")
-        $(".cover-description").append(link)
+        $(".quiz-description").append(link)
 
     } else {
         $(".cover-title").html("")
@@ -79,6 +79,5 @@ $(".weather").on("click", function () {
     $(".weather").toggleClass("cover")
 })
 
-$(".btn1").on("click", function() {
-    $(this).html("")
-})
+
+
