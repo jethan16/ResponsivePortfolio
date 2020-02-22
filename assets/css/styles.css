@@ -2,14 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    outline: none !important;
-}
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+/* a {
+    outline: none !important;
+} */
+
+p {
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+h3 {
+    font-size: 25px;
+    color: white;
+    margin-top: 5%;
+}
+
+.section {
+    padding: 10px;
+    height: 100vh;
 }
 
 body {
@@ -21,8 +38,6 @@ h1 {
 }
 
 .upper {
-    padding: 10px;
-    height: 667px;
     background: linear-gradient(195deg, #2B2D42 15%,#8D99AE 90%);
     /* z-index: -1; */
 }
@@ -36,7 +51,7 @@ h1 {
     right: 0;
     width: 30px;
     height: 30px;
-    z-index: 10;
+    z-index: 100;
 }
 
 .burger-bar {
@@ -127,8 +142,9 @@ h1 {
 /* MIDDLE */
 
 .middle {
-    height: 600px;
+    /* height: 550x; */
     width: 100vw;
+    padding: 0px;
     background:linear-gradient( rgb(220, 250, 249),#EDF2F4);
     overflow: hidden;
 }
@@ -146,11 +162,9 @@ h1 {
 
 .profile {
     align-self: center;
-    /* transform: scale(2,2); */
     border-radius: 100%;
     position: relative;
-    bottom: 425px;
-    /* top: -60%; */
+    bottom: 385px;
     border: solid 5px #353531;
     z-index: 1;
 }
@@ -160,17 +174,17 @@ h1 {
     transform: rotate(-135deg);
     position: relative;
     top: -70px;
-    right: -154px;
+    right: -156px;
     z-index: 10;
     transition: 1s ease-in-out;
 }
 
 .cloud2 {
-    transform: rotate(25deg) scale(1.15,1.15);
+    transform: rotate(35deg) scale(1.25,1.25);
     z-index: 10;
     position: relative;
-    bottom: -104px;
-    left: -115px;
+    bottom: -143px;
+    left: -155px;
     transition: 1.15s ease-in-out;
 }
 
@@ -179,6 +193,110 @@ h1 {
 }
 
 .cloudWiggle2 {
-    transform: rotate(27deg) scale(1.12)
+    transform: rotate(37deg) scale(1.12)
 }
+
+/* LOWER */
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 11px;
+    padding-top: 0;
+    /* background-color: lightgray; */
+}
+
+.projects-title {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project-bar {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: lightgray;
+    align-items: center;
+}
+
+.project-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+
+.btn1 {
+    background-color: #ff5f57;
+}
+.btn2 {
+    background-color: #ffbd2e;
+}
+.btn3 {
+    background-color: #28ca41;
+}
+
+.homepage {
+    text-align: center;
+    background-image: url(assets/images/Homepage.png);
+    height: 250px;
+    width: 336px;
+    border-radius: .5em;
+    margin: 20px auto;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.quiz {
+    text-align: center;
+    background-image: url(assets/images/quiz.png);
+    height: 250px;
+    width: 90vw;
+    border-radius: .5em;
+    margin: 20px auto;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.weather {
+    text-align: center;
+    background-image: url(assets/images/weather.png);
+    height: 250px;
+    width: 90vw;
+    border-radius: .5em;
+    margin: 20px auto;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px gray;
+
+}
+
+.cover {
+    box-shadow: inset 0 0 1000px 500px rgba(124, 124, 124, 0.897);
+}
+
+/* .cover-title {
+    font-size: 35px;
+    color: white;
+    opacity: 1;
+} */
+
+.link-style {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
 
