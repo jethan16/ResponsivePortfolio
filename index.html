@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="upper section">
+    <div class="upper section" id="greeting">
 
 
         <div class="burger">
@@ -24,32 +24,48 @@
 
 
         <div class="menu menu-hide">
-            <!-- <img class="logo" src="assets/images/logo_J.png" alt="logo"> -->
+            <a href="#profile">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="jumbo-text">
-            <h1>Hi!</h1>
+            <h1>Hey!</h1>
             <h1 class="name">I'm Ethan</h1>
             <h1>A Front End Developer.</h1>
+            <a href="#contact">
+                <div class="sayHi">Say Hi 👋</div>
+            </a>
         </div>
+
+        <div class="jumbo-right"></div>
+
         <a href="#profile">
             <i id="chevron" class="fas fa-angle-double-down" aria-hidden="false"></i>
         </a>
 
     </div>
 
-    <div class="middle section" id="profile">
-        <div class="network-container">
+    <div class="middle" id="profile">
+        <ul class="network-container">
             <a href="https://www.facebook.com/ethan.jones.376" target="_blank">
-                <img src="assets/images/fb_logo.png" alt="facebook" class="facebook networks">
+                <li class="facebook">
+                    <!-- <img src="assets/images/fb_logo.png" alt="facebook" class="facebook networks"> -->
+                </li>
             </a>
-            <a href="https://github.com/jethan16" target="_blank">
-                <img src="assets/images/git_logo.png" alt="github" class="github networks">
+
+            <a href="https://github.com/jethan16" target="_blank" class="github">
+                <li class="github">
+                    <!-- <img src="assets/images/git_logo.png" alt="github" class="github networks"> -->
+                </li>
             </a>
+
             <a href="https://www.linkedin.com/in/ethan-jones-54342288/" target="_blank">
-                <img src="assets/images/linked_logo.png" alt="linkedin" class="linked networks">
+                <li class="linkedin">
+                    <!-- <img src="assets/images/linked_logo.png" alt="linkedin" class="linked networks"> -->
+                </li>
             </a>
-        </div>
+        </ul>
 
         <img class="cloud1" id="cloud" src="./assets/images/clouds.png" alt="clouds">
         <img class="cloud2" id="cloud" src="./assets/images/clouds.png" alt="clouds">
@@ -67,12 +83,13 @@
     <div class="about">
         <h1>About</h1>
         <div class="about-me">
-            <p>Ethan is a creative thinker with a focus in web development, and dreaming up ideas. He strives to
+            <p>Ethan is from Charlotte, North Carolina. He is a creative thinker with a focus in web development, and dreaming up ideas, and He strives to
                 help any team achieve their best work and produce content that is intuitive and reliable. </p>
         </div>
+        <img src="assets/images/map.png" alt="map of the city">
     </div>
 
-    <h1 class="projects-title">Projects</h1>
+    <h1 class="projects-title" id="portfolio">Projects</h1>
 
     <div class="lower">
         <div class="homepage">
@@ -108,13 +125,13 @@
             </div>
         </div>
     </div>
-    
-    <div class="contact">
-        <h1>Contact</h1>
-    </div>
+
 
     <div class="contact" id="contact">
-        
+
+        <div class="contact-title" id="contact">
+            <h1>Contact</h1>
+        </div>
 
         <div class="contact-container">
 
@@ -128,15 +145,15 @@
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <input class="input" type="email" placeholder="Email input" value="">
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
-                    <span class="icon is-small is-right">
+                    <!-- <span class="icon is-small is-right">
                         <i class="fas fa-exclamation-triangle"></i>
-                    </span>
+                    </span> -->
                 </div>
-                <p class="help is-danger">This email is invalid</p>
+                <!-- <p class="help is-danger">This email is invalid</p> -->
             </div>
 
             <div class="field">
@@ -158,6 +175,12 @@
         </div>
 
     </div>
+
+    <footer>
+        <a href="#greeting">
+            <h5 class="bottom-link">Back to the top 👆</h5>
+        </a>
+    </footer>
 
 
 
